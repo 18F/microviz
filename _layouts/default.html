@@ -31,7 +31,7 @@
           <h3>{{page.side_text}}</h3>
           <hr/>
           {% for nav in page.sidenav %}
-            <a href="{{site.baseurl}}{{page.permalink}}/{{nav.link}}">{{nav.text}}</a>
+            <a href="{{site.baseurl}}{{page.permalink}}{{nav.link}}">{{nav.text}}</a>
             <br/>
           {% endfor %}
         {% endif %}
