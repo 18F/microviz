@@ -17,21 +17,32 @@
     <div class="wrapper">
       <header>
         <a href="/"><h1>18F Microviz</h1></a>
-        <p>Helpful data visualizations for Micropurchase Bizdev</p>
-        <p class="view"><a href="http://github.com/gemfarmer/microviz">View the Project on GitHub</a></p>
-        <ul>
-          <li><a href="{{site.baseurl}}/playground">Playground</a></li>
-          <li><a href="{{site.baseurl}}/numbers">Primary stats</a></li>
-          <li><a href="{{site.baseurl}}/charts">Charts</a></li>
-        </ul>
+        <a href="http://github.com/gemfarmer/microviz">GitHub repo</a>
+        <hr/>
+        <h3>Pages</h3>
+        <hr/>
+        <a href="{{site.baseurl}}/playground">Playground</a>
+        <br/>
+        <a href="{{site.baseurl}}/numbers">Primary stats</a>
+        <br/>
+        <a href="{{site.baseurl}}/charts">Charts</a>
+        {% if page.side_text and page.sidenav %}
+          <hr/>
+          <h3>{{page.side_text}}</h3>
+          <hr/>
+          {% for nav in page.sidenav %}
+            <a href="{{site.baseurl}}{{page.permalink}}/{{nav.link}}">{{nav.text}}</a>
+            <br/>
+          {% endfor %}
+        {% endif %}
       </header>
       <section>
         <h1>{{page.title}}</h1>
-        {{content}}
+        {{content | markdownify }}
       </section>
-      <footer>
+      <!-- <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+      </footer> -->
     </div>
 
     <script type="text/javascript" src="{{site.baseurl}}/javascripts/jquery-2.2.3.min.js"></script>

@@ -106,6 +106,8 @@ img {
 header {
   width:270px;
   float:left;
+  height: 100%;
+  overflow: auto;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
 }
@@ -267,4 +269,9 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+a + hr,
+a + br {
+  margin-top: 20px;
 }
