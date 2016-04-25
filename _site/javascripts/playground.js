@@ -68,7 +68,6 @@ $.getJSON('https://micropurchase.18f.gov/auctions.json').success(function(data){
 
    });
 
-   console.log(cols2)
    // Chart 1
     var chart = c3.generate({
       bindto: '#chart-price-by-bid',
