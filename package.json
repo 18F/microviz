@@ -7,12 +7,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gemfarmer/microviz"
+    "url": "https://github.com/18F/microviz"
   },
   "author": "18F",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/gemfarmer/microviz/issues"
+    "url": "https://github.com/18F/microviz/issues"
   },
-  "homepage": "https://gemfarmer.github.io/microviz/"
+  "homepage": "https://pages.18F.gov/microviz/"
 }
