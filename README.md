@@ -1,8 +1,9 @@
 # Microviz
 
-Visualizations that can be used to inform the business development of the Micropurchase platform
+Visual prototypes that can be used to inform the business development of the Micropurchase platform. Figures and and content is unofficial and is intended only as an development aide for [Micropurchase](https://github.com/18F/micropurchase).
 
-## Running the app
+
+## Running the app locally
 
 * install jekyll
 * `jekyll serve --baseurl ""`
