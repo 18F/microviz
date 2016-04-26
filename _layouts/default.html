@@ -15,24 +15,24 @@
     <div class="wrapper">
       <header>
         <a href="{{site.baseurl}}/"><h1>18F Microviz</h1></a>
-        <a href="http://github.com/18F/microviz">GitHub repo</a>
+        <a href="http://github.com/18F/microviz/">GitHub repo</a>
         <p><strong>Data: </strong><a href="https://micropurchase.18f.gov/auctions.json">https://micropurchase.18f.gov/</a></p>
         <hr/>
         <h3>Pages</h3>
         <hr/>
-        <a href="{{site.baseurl}}/numbers">Primary stats</a>
+        <a href="{{site.baseurl}}/numbers/">Primary stats</a>
         <br/>
-        <a href="{{site.baseurl}}/playground">Playground</a>
+        <a href="{{site.baseurl}}/playground/">Playground</a>
         <br/>
-        <a href="{{site.baseurl}}/charts">Charts</a>
+        <a href="{{site.baseurl}}/charts/">Charts</a>
         <br/>
-        <a href="{{site.baseurl}}/more-charts">More Charts</a>
+        <a href="{{site.baseurl}}/more-charts/">More Charts</a>
         {% if page.side_text and page.sidenav %}
           <hr/>
           <h3>{{page.side_text}}</h3>
           <hr/>
           {% for nav in page.sidenav %}
-            <a href="{{site.baseurl}}{{page.permalink}}{{nav.link}}">{{nav.text}}</a>
+            <a href="{{site.baseurl}}{{page.permalink}}{{nav.link}}/">{{nav.text}}</a>
             <br/>
           {% endfor %}
         {% endif %}
