@@ -6,7 +6,7 @@ Visual prototypes that can be used to inform the business development of the Mic
 ## Running the app locally
 
 * install jekyll
-* `jekyll serve --baseurl ""`
+* `jekyll serve`
 * go to localhost:3000
 
 
