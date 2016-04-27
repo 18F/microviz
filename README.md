@@ -8,8 +8,9 @@ Visual prototypes that can be used to inform the business development of the Mic
 
 The site is managed with [Federalist](https://federalist.18f.gov). It can be viewed at the following:
 
-[Preview Site](https://federalist.18f.gov/site/18F/microviz/)
-**[Preview develop branch](https://federalist.18f.gov/preview/18F/microviz/develop/)** (most recent)
+* [Preview Site](https://federalist.18f.gov/site/18F/microviz/)
+* **[Preview develop branch](https://federalist.18f.gov/preview/18F/microviz/develop/)** (most recent)
+* [18F pages](http://18f.github.io/microviz/) (alternative)
 
 More info in [CONTRIBUTING](CONTRIBUTING.md#federalist) or in [Federalist's docs](https://federalist-docs.18f.gov/)
 

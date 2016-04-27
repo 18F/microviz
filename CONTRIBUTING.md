@@ -36,6 +36,7 @@ handling git branches. This means there are two main branches in the repository:
 
 * `master` - stable code deployed to production
 * `develop` - code in development that is periodically released to production site
+* `18f-pages` – to deploy to [18f-pages version of site](http://18f.github.io/microviz/)
 
 Unlike git flow, there is no requirement to prefix any of your branches with
 type strings like `feature/` or `hotfix/`, but you **must** submit any pull
