@@ -35,12 +35,20 @@ flow](http://nvie.com/posts/a-successful-git-branching-model/) approach for
 handling git branches. This means there are two main branches in the repository:
 
 * `master` - stable code deployed to production
-* `develop` - code in development that is periodically released to production by merging into master
+* `develop` - code in development that is periodically released to production site
 
 Unlike git flow, there is no requirement to prefix any of your branches with
 type strings like `feature/` or `hotfix/`, but you **must** submit any pull
 request against the `develop` branch. Pull requests against `master` will be
 rejected.
+
+### Federalist
+
+The site is managed with [Federalist](https://federalist.18f.gov). Docs for Federalist can be found [here](https://federalist-docs.18f.gov/)
+
+One of Federalist's coolest features is [Draft Previews](https://federalist-docs.18f.gov/pages/using-federalist/#managing-site-settings/). This allows any branch of the registered repo to be viewable with a preview link. So instead of asking people to run the app locally or being forced to merge to develop or staging branches, we can instead view a Microviz branch, `some-branch`, like so:
+
+```https://federalist.18f.gov/preview/18F/microviz/some-branch/```
 
 ## Public domain
 
