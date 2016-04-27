@@ -30,8 +30,11 @@
           <h3>{{page.side_text}}</h3>
           <hr/>
           <ul>
+          {% capture less_one %}{{ page.permalink.size | minus: 1}}{% endcapture %}
+          {% assign permalink = page.permalink | slice:0,less_one %}
+
           {% for nav in page.sidenav %}
-            <li><a href="{{site.baseurl}}{{page.permalink}}{{nav.link}}/">{{nav.text}}</a></li>
+            <li><a href="{{site.baseurl}}{{ permalink }}{{nav.link}}/">{{nav.text}}</a></li>
           {% endfor %}
           </ul>
         {% endif %}
