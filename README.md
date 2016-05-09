@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [![Code Climate](https://codeclimate.com/github/18F/micropurchase/badges/gpa.svg)](https://codeclimate.com/github/18F/micropurchase) [![Test Coverage](https://codeclimate.com/github/18F/micropurchase/badges/coverage.svg)](https://codeclimate.com/github/18F/micropurchase/coverage) [![Dependency Status](https://gemnasium.com/18F/micropurchase.svg)](https://gemnasium.com/18F/micropurchase) [![security](https://hakiri.io/github/18F/micropurchase/master.svg)](https://hakiri.io/github/18F/micropurchase/master)
 [![Accessibility](https://continua11y.18f.gov/18F/micropurchase.svg?branch=develop)](https://continua11y.18f.gov/18F/micropurchase)
 
@@ -90,3 +91,8 @@ This project is in the worldwide [public domain](LICENSE.md). As stated in [CONT
 > This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
 >
 > All contributions to this project will be released under the CC0 dedication. By submitting a pull request, you are agreeing to comply with this waiver of copyright interest.
+=======
+# Micropurchase Design Prototype
+
+[View site here](https://federalist.18f.gov/preview/18F/microviz/design-prototype/)
+>>>>>>> ed9bd2d... add readme

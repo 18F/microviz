@@ -20,3 +20,6 @@
 .env
 
 cf-ssh.yml
+vendor
+_site
+tmp
