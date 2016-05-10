@@ -1,7 +1,9 @@
-(function (window) {
-	var microp = {};
+'use strict';
 
-	/**
+(function (window) {
+  var microp = {};
+
+  /**
   * 'throttles' the execution of a funtion.
   * will only call the function passed to throttle
   * once every @threshold milliseconds
@@ -16,7 +18,7 @@
     return function () {
       var context = scope || this;
 
-      var now = +new Date,
+      var now = +new Date(),
           args = arguments;
       if (last && now < last + threshhold) {
         // hold on to it
@@ -30,12 +32,10 @@
         fn.apply(context, args);
       }
     };
-  }
+  };
 
   microp.format = function(format) {
-    return (typeof format === 'function')
-      ? format
-      : d3.format(format);
+    return (typeof format === 'function') ? format : d3.format(format);
   };
 
   microp.format.transform = function(format, transform) {
@@ -80,9 +80,9 @@
   microp.format.date = function (date, seperator) {
     var dateObj,
       date;
-    if (typeof(date) == 'string') {
+    if (typeof(date) === 'string') {
       dateObj = new Date(date);
-    } else if (typeof(date) == 'object') {
+    } else if (typeof(date) === 'object') {
       dateObj = date;
     }
 
