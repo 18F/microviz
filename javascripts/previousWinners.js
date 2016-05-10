@@ -7,11 +7,11 @@
     onReady: function(){
       // Retrieve data
       $.getJSON('https://micropurchase.18f.gov/auctions.json').success(function(data){
-        var auctions = _.sortBy(data.auctions, 'id');
+        window.auctions = _.sortBy(data.auctions, 'id');
 
-        window.winners.metrics = new Metrics(auctions);
+        window.winners.metrics = new Metrics(window.auctions);
 
-        window.winners.charts = new Charts(auctions);
+        window.winners.charts = new Charts(window.auctions);
 
       })
       .error(function(error){

@@ -13,7 +13,9 @@
       $winning_bid: this.selectMetric("winning_bid"),
       $unique_winners: this.selectMetric('unique_winners'),
       $auction_length: this.selectMetric('auction_length'),
-      $auctions_total: this.selectMetric('auctions_total')
+      $auctions_total: this.selectMetric('auctions_total'),
+      $unique_bidders: this.selectMetric('unique_bidders'),
+      $less_than: this.selectMetric('less_than')
     };
 
     this.generate();
@@ -65,6 +67,24 @@
       return winningBids.length;
     },
 
+    getUniqueBiddersPerAuction: function() {
+      var bidders = this.getAllBidders();
+      return _.map(bidders, function (bidder) {
+        return _.uniq(bidder).length;
+      })
+    },
+
+    meanUniqueBiddersPerAuction: function (argument) {
+      return d3.mean(this.getUniqueBiddersPerAuction());
+    },
+
+    fewerThan: function (bidders) {
+      var auctions = this.getUniqueBiddersPerAuction();
+      return _.filter(auctions, function (auction) {
+        return auction < bidders;
+      })
+    },
+
     getBidsPerAuction: function() {
       var bidsPerAuction = _.map(this.auctions, function(auction, key){
         return auction.bids.length
@@ -104,6 +124,8 @@
       this.bidsPerAuction = this.getBidsPerAuction();
       this.biddingVendors = this.getBiddingVendors();
       this.auctionLength = this.getAuctionLength();
+      this.uniqueBidders = this.meanUniqueBiddersPerAuction();
+      this.lessThan = this.fewerThan(3);
 
       this.setSelectorText('$auctions_total', this.auctions.length);
       this.setSelectorText('$unique_winners', this.uniqueWinners);
@@ -111,6 +133,8 @@
       this.setSelectorText('$bidding_vendors', this.biddingVendors, '#');
       this.setSelectorText('$auction_length', this.auctionLength, 'days');
       this.setSelectorText('$winning_bid', this.avgWinningBids, '$');
+      this.setSelectorText('$unique_bidders', this.uniqueBidders, '#');
+      this.setSelectorText('$less_than', this.lessThan, '#');
     }
   }
 
