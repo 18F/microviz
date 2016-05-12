@@ -145,7 +145,7 @@ img { max-width: 100%; }
 	border-bottom: 1px solid #e7d49b;
 }
 
-.site-header{ 
+.site-header{
 	padding: 8px 0 10px;
 }
 
@@ -234,7 +234,7 @@ img { max-width: 100%; }
 	color: #555;
 	padding: 4px 12px;
 	height: 2.33em;
-	
+
 }
 
 
@@ -282,7 +282,7 @@ img { max-width: 100%; }
 	  -khtml-user-select: none;    /* Konqueror */
 	  -moz-user-select: none;      /* Firefox */
 	  -ms-user-select: none;       /* IE/Edge */
-	  user-select: none;           
+	  user-select: none;
 }
 
 
@@ -305,7 +305,7 @@ img { max-width: 100%; }
 	border-radius: 100%;
 	position: absolute;
 	left: 4px;
-	top: 3px;	
+	top: 3px;
 }
 
 .site-header .nav-sign-out span.action{
@@ -315,9 +315,9 @@ img { max-width: 100%; }
 }
 
 @media screen and (min-width:568.88px){
-	.site-header .wrapper{ 
-		padding-right: 224px; 
-		padding-left: 128px; 
+	.site-header .wrapper{
+		padding-right: 224px;
+		padding-left: 128px;
 	}
 	.site-header .logo{ margin-left: -128px; margin-bottom: 0;}
 	.site-header form{ clear: none; }
@@ -375,7 +375,7 @@ nav.breadcrumbs a{
 	letter-spacing: -1px;
 }
 
-.site-footer a{ 
+.site-footer a{
 	color: inherit;
 }
 
@@ -461,7 +461,7 @@ article.auction footer.auction-footer dd img{
 article.auction footer.auction-footer dt.auction-current-bid,
 article.auction footer.auction-footer dd.auction-current-bid{
 	position: absolute;
-	left: 50%;	
+	left: 50%;
 	bottom: 0;
 	padding-bottom: 20px;
 	border-left: 1px solid #eee;
@@ -504,7 +504,7 @@ dd.auction-status{
 }
 
 dd.auction-status-closed{
-	background: #992d00;	
+	background: #992d00;
 }
 
 .layout-home main article .auction-status{
@@ -520,7 +520,7 @@ dd.auction-status-closed{
 
 .page{ padding-top: 1em; }
 
-.page .wrapper{ 
+.page .wrapper{
 	width: auto;
 	max-width: none;
 }
@@ -690,7 +690,7 @@ a[id]{
 }
 
 @media screen and (min-width: 568.88px){
-	
+
 	.page{ padding-top: 1.6em; }
 
 	.page .page-title,
@@ -719,27 +719,27 @@ a[id]{
 		margin: 0 auto 0.8em;
 		line-height: 1.6em;
 	}
-	
+
 	.page li p{
 		margin-left: 0;
 		width: auto;
 	}
-	
+
 	.page h1,
 	.page h2,
 	.page h3,
 	.page h4 {
 		line-height: 1.2em;
 	}
-	
+
 	.page h1,
 	.page .page-title{ font-size: 40px; }
 	.page h1+p,
-	.page .page-title+p{ 
+	.page .page-title+p{
 		font-size: 20px;
-		line-height: 1.67em; 
+		line-height: 1.67em;
 	}
-	.page h2{ 
+	.page h2{
 		margin-top: 28px;
 		font-size: 21px;
 		line-height: 1.3em;
@@ -817,7 +817,7 @@ a[id]{
 	.page .h-card{
 		position: relative;
 		left: -80px;
-	}	
+	}
 }
 
 .page .h-card::before{
@@ -880,7 +880,7 @@ a[id]{
 
 .layout-auctions-show main .auction-footer {
 	padding: 20px;
-	background: #eee;	
+	background: #eee;
 }
 
 .layout-auctions-show main .auction-header dl dt,
@@ -888,7 +888,7 @@ a[id]{
 	font-size: 11px;
 	font-family: roboto condensed;
 	text-transform: uppercase;
-	margin-bottom: 6px;	
+	margin-bottom: 6px;
 	color: #555;
 }
 
@@ -905,14 +905,14 @@ a[id]{
 	display: block;
 	margin-top: 0.4em;
 	font-size: 12px;
-	
+
 }
 
 @media screen and (min-width: 1066.66px){
 	.layout-auctions-show main .wrapper{
 		padding-right: 384px;
-	}	
-	
+	}
+
 	.layout-auctions-show main .wrapper .page,
 	.layout-auctions-show main .wrapper .auction-footer{
 		float: left;
@@ -931,7 +931,7 @@ a[id]{
 	.layout-auctions-show main .wrapper .page p,
 	.layout-auctions-show main .wrapper .page li{
 		margin-left: 0;
-	}	
+	}
 
 }
 /* @end */
@@ -960,7 +960,7 @@ a[id]{
 .h-feed-header h1{
 	font-size: 48px;
 	font-weight: 100;
-	letter-spacing: -0.03em;	
+	letter-spacing: -0.03em;
 }
 
 .h-feed-header nav{
@@ -1037,9 +1037,9 @@ a[id]{
 .layout-sign-in main { padding-top: 2em; }
 .layout-sign-in main section {
 	margin-bottom: 2em;
-	
+
 }
-.layout-sign-in main h1 { 
+.layout-sign-in main h1 {
 	font-size: 48px;
 	font-weight: 100;
 	letter-spacing: -2px;
@@ -1048,7 +1048,7 @@ a[id]{
 
 .layout-sign-in main p,
 .layout-sign-in main li{
-	line-height: 1.4em;	
+	line-height: 1.4em;
 	margin-bottom: 0.6em;
 	max-width: 32em;
 }
@@ -1066,12 +1066,12 @@ a[id]{
 	.layout-sign-in main section{
 		float: left;
 		width: 50%;
-	}	
-	
+	}
+
 	.layout-sign-in main section:first-child{
 		padding-top: 4em;
 	}
-	
+
 	.layout-sign-in main section:last-child h1{
 		font-size: 32px;
 		letter-spacing: -1;
